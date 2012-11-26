@@ -17,7 +17,7 @@ git rebase TAGNUMBER
 
 heroku maintenance:on -a diaspora-production
 ruby jdconfig.rb
-git push heroku joindiaspora:master
+git push heroku joindiaspora:master -f
 heroku run 'rails runner "AssetSync.sync"'
 
 heroku maintenance:off -a diaspora-production
