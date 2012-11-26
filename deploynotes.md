@@ -13,6 +13,11 @@ TODO:
 git pull
 git checkout joindiapsora
 git rebase TAGNUMBER
+bundle
+
+git add .
+
+git commit -am 'updating gemfile.lock'
 
 
 heroku maintenance:on -a diaspora-production
