@@ -52,7 +52,7 @@ end
 # database
 
 gem "activerecord-import", "0.3.1"
-gem 'foreigner', '1.3.0'
+gem 'foreigner', '1.4.0'
 gem 'mysql2', '0.3.11' if ENV['DB'].nil? || ENV['DB'] == 'all' || ENV['DB'] == 'mysql'
 gem 'pg', '0.14.1' if ENV['DB'] == 'all' || ENV['DB'] == 'postgres'
 gem 'sqlite3' if ENV['DB'] == 'all' || ENV['DB'] == 'sqlite'
