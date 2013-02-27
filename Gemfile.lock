@@ -72,7 +72,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.4.0)
+    coffee-script-source (1.6.1)
     configurate (0.0.2)
     crack (0.3.2)
     cucumber (1.2.1)
