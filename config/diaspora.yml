@@ -45,6 +45,7 @@ configuration: ## Section
     #certificate_authorities: '/etc/ssl/certs/ca-certificates.crt'
     ## CentOS, Fedora
     #certificate_authorities: '/etc/pki/tls/certs/ca-bundle.crt'
+    certificate_authorities: '/usr/lib/ssl/certs/ca-certificates.crt'
     
     ## URL for a remote redis.
     ## Don't forget to restrict the IP access!
