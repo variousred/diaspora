@@ -36,7 +36,7 @@ configuration: ## Section
     ## However changing http to https is okay and has no consequences.
     ## If you do change it you have to start over as it's hardcoded into
     ## the database.
-    #url: "https://example.org/"
+    url: "https://mjdiaspora.herokuapp.com/"
     
     ## Setting the bundle of certificate authorities (CA) certificates.
     ## This is operating system specific.
@@ -45,6 +45,7 @@ configuration: ## Section
     #certificate_authorities: '/etc/ssl/certs/ca-certificates.crt'
     ## CentOS, Fedora
     #certificate_authorities: '/etc/pki/tls/certs/ca-bundle.crt'
+    certificate_authorities: '/usr/lib/ssl/certs/ca-certificates.crt'
     
     ## URL for a remote redis.
     ## Don't forget to restrict the IP access!
@@ -65,7 +66,7 @@ configuration: ## Section
     ## thin by default, running, however this makes it quite slow as
     ## all the time intensive jobs must be run inside the request cycle.
     ## So this is higly unrecommended for production setups.
-    #single_process_mode: true
+    single_process_mode: true
     
     ## Use Amazon S3 instead of your local filesystem
     ## to handle uploaded pictures.
@@ -114,7 +115,7 @@ configuration: ## Section
     
     ## The database type the server should use by default.
     ## Valid choices are 'mysql' and 'postgres'
-    #database: 'mysql'
+    database: 'postgres'
     
     ## Number of unicorn worker processes, increase this if
     ## you have many users
