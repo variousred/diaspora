@@ -2,18 +2,26 @@
 
 ## Bug fixes
 
-* reset comment box height after posting a comment. [#4030](https://github.com/diaspora/diaspora/issues/4030)
-* fade long tag names. [#3899](https://github.com/diaspora/diaspora/issues/3899)
-* avoid posting empty comments. [#3836](https://github.com/diaspora/diaspora/issues/3836)
+* Fix cancel button on getting_started confirmation box [#4073](https://github.com/diaspora/diaspora/issues/4073)
+* Reset comment box height after posting a comment. [#4030](https://github.com/diaspora/diaspora/issues/4030)
+* Fade long tag names. [#3899](https://github.com/diaspora/diaspora/issues/3899)
+* Avoid posting empty comments. [#3836](https://github.com/diaspora/diaspora/issues/3836)
 * Delegate parent_author to the target of a RelayableRetraction
 * Do not fail on receiving a SignedRetraction via the public route
 * Pass the real values to stderr_path and stdout_path in unicorn.rb since it runs a case statement on them.
+* Decode tag name before passing it into a TagFollowingAction [#4027](https://github.com/diaspora/diaspora/issues/4027)
+* Fix reshares in single post-view [#4056](https://github.com/diaspora/diaspora/issues/4056)
+* Fix mobile view of deleted reshares. [#4063](https://github.com/diaspora/diaspora/issues/4063)
+* Hide comment button in the mobile view when not signed in. [#4065](https://github.com/diaspora/diaspora/issues/4065)
 
 ## Refactor
 
+* Delete unnecessary javascript views. [#4059] (https://github.com/diaspora/diaspora/pull/4059)
+* Add a configuration entry to set max-age header to Amazon S3 resources. [#4048](https://github.com/diaspora/diaspora/pull/4048)
 * Refactor people_controller#show and photos_controller#index [#4002](https://github.com/diaspora/diaspora/issues/4002)
 * Modularize layout [#3944](https://github.com/diaspora/diaspora/pull/3944)
 * Add header to the sign up page [#3944](https://github.com/diaspora/diaspora/pull/3944)
+* Load images via sprites [#4039](https://github.com/diaspora/diaspora/pull/4039)
 
 ## Features
 
@@ -21,6 +29,15 @@
 * Include reshares in a users public atom feed [#1781](https://github.com/diaspora/diaspora/issues/1781)
 * Add the ability to upload photos from the mobile site. [#4004](https://github.com/diaspora/diaspora/issues/4004)
 * Show timestamp when hovering on comment time-ago string. [#4042](https://github.com/diaspora/diaspora/issues/4042)
+* If sharing a post with photos to Facebook, always include URL to post [#3706](https://github.com/diaspora/diaspora/issues/3706)
+
+# 0.0.3.4
+
+* Bump Rails to 3.2.13, fixes CVE-2013-1854, CVE-2013-1855, CVE-2013-1856 and CVE-2013-1857. [Read more](http://weblog.rubyonrails.org/2013/3/18/SEC-ANN-Rails-3-2-13-3-1-12-and-2-3-18-have-been-released/)
+
+# 0.0.3.3
+
+* Switch Gemfile source to https to be compatible with bundler 1.3
 
 # 0.0.3.2
 
