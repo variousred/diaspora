@@ -220,7 +220,7 @@ configuration: ## Section
     ## This selects which mailer should be used. Take 'smtp' for a smtp
     ## connection, 'sendmail' to use the sendmail binary or
     ## 'messagebus' to use the messagebus service.
-    method: 'smtp'
+    #method: 'smtp'
     
     ## Ignore if method isn't 'smtp'
     smtp: ## Section
@@ -290,7 +290,7 @@ configuration: ## Section
     ## This doesn't make the user an admin but is used when a generic
     ## admin contact is neeeded, much like the postmaster role in mail
     ## systems. Set only the username, NOT the full ID.
-    #account: "podmaster"
+    account: "variousred"
 
     ## E-Mail address users can contact the administrator
     #podmin_email: 'podmin@example.org'
