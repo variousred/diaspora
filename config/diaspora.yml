@@ -215,7 +215,7 @@ configuration: ## Section
     enable: true
     
     ## Sender address used in mail send by Diaspora
-    #sender_address: 'no-reply@mjdiaspora.herokuapp.com'
+    sender_address: 'no-reply@mjdiaspora.herokuapp.com'
     
     ## This selects which mailer should be used. Take 'smtp' for a smtp
     ## connection, 'sendmail' to use the sendmail binary or
