@@ -162,12 +162,12 @@ configuration: ## Section
   
     ## The name of your pod displayed in various locations,
     ## including the header.
-    #pod_name: "Diaspora*"
+    pod_name: "MJ Diaspora*"
     
     ## Set this to false to prevent people from signing up for your pod
     ## without an invitation. Note that this needs to be true even for
     ## the first registration (you).
-    #enable_registrations: true
+    enable_registrations: true
     
     ## Set this to false if you don't want your users to follow the
     ## diasporahq@joindiaspora.com account on account creation.
@@ -179,12 +179,12 @@ configuration: ## Section
     ## Settings about invitations
     invitations: ## Section
       
-      ## Set this to true if you want users to be able to send invites.
-      #open: true
+      ## Set this to true if you want users to invite as many
+      ## people as they want.
+      open: true
       
       ## The default amount of invitiations an invite link has.
-      ## Every user has such a link. Default count is 25, uncomment to set
-      ## another value.
+      ## Every user has such a link. Only counts if open is false.
       #count: 25
     
     ## Paypal donations
@@ -212,15 +212,15 @@ configuration: ## Section
   mail: ## Section
   
     ## First you need to enable it ;)
-    #enable: true
+    enable: true
     
     ## Sender address used in mail send by Diaspora
-    #sender_address: 'no-reply@example.org'
+    #sender_address: 'no-reply@mjdiaspora.herokuapp.com'
     
     ## This selects which mailer should be used. Take 'smtp' for a smtp
     ## connection, 'sendmail' to use the sendmail binary or
     ## 'messagebus' to use the messagebus service.
-    #method: 'smtp'
+    method: 'smtp'
     
     ## Ignore if method isn't 'smtp'
     smtp: ## Section
